@@ -1,0 +1,11 @@
+<div class="pokedex-container" *ngIf="pokemonAtual">
+  <button (click)="anterior()" class="arrow left">◀</button>
+
+  <div class="pokemon-card">
+    <img [src]="pokemonAtual.imagem" alt="{{pokemonAtual.nome}}">
+    <h2>{{pokemonAtual.nome}}</h2>
+    <p>{{pokemonAtual.tipo}}</p>
+  </div>
+
+  <button (click)="proximo()" class="arrow right">▶</button>
+</div>

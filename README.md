@@ -1,27 +1,23 @@
-# Pokedex
+📚 Pokedéx – Projeto Simples
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.11.
+Este projeto tem como objetivo simular uma Pokédex básica.
+Ela permite navegar por 30 Pokémon, exibindo foto, nome e tipo de cada um.
+É uma implementação leve, criada para estudo e prática com Angular.
 
-## Development server
+💻 Tecnologias utilizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Angular 14
 
-## Code scaffolding
+Node.js 16
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+🧩 Como executar o projeto
 
-## Build
+Certifique-se de que o Angular CLI está instalado e configurado corretamente.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+No terminal, execute o comando:
 
-## Running unit tests
+ng serve
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Em seguida, acesse no navegador:
+http://localhost:4200/
