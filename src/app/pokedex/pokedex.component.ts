@@ -14,12 +14,21 @@ export class PokedexComponent implements OnInit {
 
   constructor(private pokemonService: PokemonService) { }
 
-  ngOnInit(): void {
-    this.pokemons = this.pokemonService.getPokemons();
-    if (this.pokemons.length > 0) {
-      this.pokemonAtual = this.pokemons[this.index];
+  ngOnInit(): void { 
+  this.pokemonService.getPokemons().subscribe({
+    next: (data: any[]) => {
+      console.log("Dados recebidos da API:", data);
+      this.pokemons = data;
+      this.pokemons.sort((a, b) => a.nome.localeCompare(b.nome));
+      if (this.pokemons.length > 0) {
+        this.pokemonAtual = this.pokemons[0];
+      }
+    },
+    error: (err: any) => {
+      console.error('Erro ao buscar pokémons', err);
     }
-  }
+  });
+}
 
   proximo(): void {
     if (this.pokemons.length === 0) return;

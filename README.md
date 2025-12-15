@@ -1,23 +1,68 @@
 📚 Pokedéx – Projeto Simples
 
-Este projeto tem como objetivo simular uma Pokédex básica.
-Ela permite navegar por 30 Pokémon, exibindo foto, nome e tipo de cada um.
-É uma implementação leve, criada para estudo e prática com Angular.
+Este projeto é uma implementação básica de uma Pokedéx utilizando Angular no front-end e Spring Boot no back-end, com fins educacionais e de estudo.
 
-💻 Tecnologias utilizadas
+💻 Tecnologias Utilizadas
+
+Spring Boot 3
 
 Angular 14
 
 Node.js 16
 
-🧩 Como executar o projeto
+🧩 Pré-requisitos
 
-Certifique-se de que o Angular CLI está instalado e configurado corretamente.
+Antes de executar o projeto, certifique-se de ter instalado:
 
-No terminal, execute o comando:
+Node.js
+ (versão 16 ou superior)
+
+Angular CLI
+
+Java JDK
+ para Spring Boot
+
+IDE de sua preferência (VS Code, IntelliJ, etc.)
+
+⚡ Como Executar
+1. Back-end (Spring Boot)
+
+Abra o projeto Spring Boot na sua IDE.
+
+Execute a aplicação. Por padrão, ela rodará em:
+
+http://localhost:8080/
+
+
+Para acessar o banco de dados H2 (console web):
+
+http://localhost:8080/h2-console/
+
+
+Dica: Usuário e senha padrão podem ser configurados no application.properties.
+
+2. Front-end (Angular)
+
+Abra o terminal na pasta do projeto Angular.
+
+Instale as dependências:
+
+npm install
+
+
+Execute o projeto:
 
 ng serve
 
 
-Em seguida, acesse no navegador:
+Acesse a aplicação no navegador:
+
 http://localhost:4200/
+
+📝 Observações
+
+Este projeto é apenas para fins de estudo.
+
+Certifique-se de que o Spring Boot esteja rodando antes de iniciar o Angular, pois a aplicação front-end depende do back-end para consumir a API.
+
+A pasta node_modules/ e a pasta dist/ não devem ser commitadas no Git.
