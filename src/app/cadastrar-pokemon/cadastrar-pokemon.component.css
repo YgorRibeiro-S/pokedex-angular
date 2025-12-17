@@ -1,0 +1,63 @@
+.cadastrar-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pokemon-card {
+  text-align: center;
+  padding: 25px;
+  border: 2px solid #333;
+  border-radius: 15px;
+  background-color: #f8f8f8;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.pokemon-card h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+
+button[type="submit"] {
+  margin-top: 15px;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff0000;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #cc0000;
+}
+
+.arrow {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  color: #ff0000;
+}
